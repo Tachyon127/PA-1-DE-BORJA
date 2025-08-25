@@ -1,16 +1,16 @@
 # PA-1-DE-BORJA
 
-# Python Mini Projects 🐍
+# Python Mini Projects 
 
 This repository contains three Python exercises that demonstrate basic programming concepts.
 
-## 📌 Projects
+## Projects
 
-- **Alphabet Soup ✨**  
+- **Alphabet Soup**  
   Rearranges the letters of a word into alphabetical order.
 
-- **Emotify 😀**  
+- **Emotify**  
   Replaces certain words with their corresponding emoticons.
 
-- **Unpack List 📦**  
+- **Unpack List**  
   Extracts the first, middle, and last elements from a list using unpacking.
