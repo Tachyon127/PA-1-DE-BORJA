@@ -1,11 +1,4 @@
 # PA-1-DE-BORJA
-(REUPLOADED)
-
-# Python Mini Projects 
-
-This repository contains three Python exercises that demonstrate basic programming concepts.
-
-## Projects
 
 - **Alphabet Soup**  
 I created a function [alphabet_soup] which;
@@ -13,6 +6,13 @@ I created a function [alphabet_soup] which;
   2. Utilizes Python’s built-in `sorted()` function to arrange the characters in alphabetical order.
   3. Joins the sorted characters back together using `"".join()`.
   4. Prints the final arranged word.  
+
+'''def alphabet_soup(word: str):
+    return ''.join(sorted(word))
+
+word = input("Enter ANYTHING!: ")
+print("Alphabet SOUP:", alphabet_soup(word))
+Alphabet SOUP:    STUaaefiimnnooorssttvy'''
 
 - **Emotify**  
 By utilizing the dictionary (emoticons) created;
