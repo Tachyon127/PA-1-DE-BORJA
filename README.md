@@ -1,7 +1,16 @@
 # PA-1-DE-BORJA
 
-Problem #1
-- **Alphabet Soup**
+This Python script contains three mini-problems designed to practice basic string manipulation, dictionaries, and list unpacking.
+
+---
+
+## Problem #1: Alphabet Soup
+
+The function `alphabet_soup()`:
+1. Accepts a string from the user via `input()`.
+2. Uses Python’s built-in `sorted()` function to sort the characters in alphabetical order.
+3. Joins the sorted characters using `"".join()` to form a new string.
+4. Prints the result as "Alphabet SOUP".
 
 ```
 def alphabet_soup(word: str):
@@ -9,17 +18,17 @@ def alphabet_soup(word: str):
 
 word = input("Enter ANYTHING!: ")
 print("Alphabet SOUP:", alphabet_soup(word))
-Alphabet SOUP:    STUaaefiimnnooorssttvy
+
 ```
 
-I created a function [alphabet_soup] which;
-  1. Accepts a string (word) from the user as input.
-  2. Utilizes Python’s built-in `sorted()` function to arrange the characters in alphabetical order.
-  3. Joins the sorted characters back together using `"".join()`.
-  4. Prints the final arranged word.  
+## Problem #2: Emotify
 
-Problem #2
-- **Emotify**
+The function `emotify()`:
+1. Defines a dictionary of common emotion words mapped to emoticons.
+2. Splits the input sentence into individual words using `.split()`.
+3. Checks each word (case-insensitive) against the dictionary.
+4. Replaces matching words with their emoticons.
+5. Joins and returns the modified sentence.
 
 ```
 def emotify(sentence):
@@ -34,16 +43,20 @@ def emotify(sentence):
             result.append(word)
     
     return " ".join(result)
+
+sentence = input("Enter a sentence: ")
+print("Converted:", emotify(sentence))
 ```
 
-By utilizing the dictionary created (emoticons);
-  1. Sentence from user input is split into Individual words using `.split()`.
-  2. Each word is checked to see if it matches any existing keys in the dictionary.
-  3. It is then replaced/converted with the emoticon. Otherwise, the original word is kept.
-  4. The list of words was joined back and displayed with  return " ".join(result).
+## Problem #3: Unpack List
 
-Problem #3
-- **Unpack List**
+The function `unpack_list()`:
+1. Uses the unpacking syntax `first, *middle, last` to divide a list into:
+   - `first`: the first item
+   - `middle`: all items in between (as a list)
+   - `last`: the last item
+2. Input is collected as a space-separated string and converted into a list with `.split()`.
+3. The three parts are printed.
 
 ```
 def unpack_list(lst):
@@ -54,14 +67,7 @@ def unpack_list(lst):
 
 user = input("Enter numbers separated by spaces: ")
 lst = user.split()
-
 unpack_list(lst)
 ```
 
-  1. Python’s unpacking feature is utilized:
-  - `first` stores the first element.
-  - `last` stores the last element.
-  - `*middle` captures all the elements in between as a list.
-  2. The program takes user input of numbers separated by spaces.
-  3. The input string is then converted into a list with `.split()`.
-  4. The unpacked parts (first, middle, last) are then printed.  
+---VERSION 2---
